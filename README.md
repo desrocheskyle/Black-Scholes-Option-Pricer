@@ -23,7 +23,7 @@ Since the application is not live, these screenshots showcase the clean UI desig
 | :--- | :--- | :--- |
 | **Main Dashboard** | Sidebar inputs and metric cards showing the calculated Option Price and Greeks (Delta, Gamma, etc.). | ![Screenshot of Streamlit Black-Scholes app main dashboard showing metric cards](screenshots/dashboard.png) |
 | **Monte Carlo Tab** | Interactive section for running the Monte Carlo simulation and viewing the price result. | ![Screenshot of Monte Carlo simulation tab](screenshots/monte_carlo.png) |
-| **3D Price Surface** | Interactive Plotly surface plot demonstrating Option Price sensitivity across changes in Stock Price and Volatility. | ![Screenshot of Plotly 3D surface plot visualizing option price sensitivity](screenshotssurface_plot.png) |
+| **3D Price Surface** | Interactive Plotly surface plot demonstrating Option Price sensitivity across changes in Stock Price and Volatility. | ![Screenshot of Plotly 3D surface plot visualizing option price sensitivity](screenshots/surface_plot.png) |
 | **Sensitivity Lines** | Interactive Plotly line chart showing how Delta and Gamma (Greeks) change as the underlying stock price moves. | ![Screenshot of Plotly line chart showing Delta and Gamma option greeks](screenshots/line_plot.png) |
 
 ---
