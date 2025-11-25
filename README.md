@@ -21,9 +21,10 @@ Since the application is not live, these screenshots showcase the clean UI desig
 
 | Page / Chart | Description | Screenshot |
 | :--- | :--- | :--- |
-| **Main Dashboard** | Sidebar inputs and metric cards showing the calculated Option Price and Greeks (Delta, Gamma, etc.). | ![Screenshot of Streamlit Black-Scholes app main dashboard showing metric cards](assets/fintech/dashboard.png) |
-| **3D Price Surface** | Interactive Plotly surface plot demonstrating Option Price sensitivity across changes in Stock Price and Volatility. | ![Screenshot of Plotly 3D surface plot visualizing option price sensitivity](assets/fintech/surface_plot.png) |
-| **Sensitivity Lines** | Interactive Plotly line chart showing how Delta and Gamma (Greeks) change as the underlying stock price moves. | ![Screenshot of Plotly line chart showing Delta and Gamma option greeks](assets/fintech/sensitivity_lines.png) |
+| **Main Dashboard** | Sidebar inputs and metric cards showing the calculated Option Price and Greeks (Delta, Gamma, etc.). | ![Screenshot of Streamlit Black-Scholes app main dashboard showing metric cards](screenshots/dashboard.png) |
+| **Monte Carlo Tab** | Interactive section for running the Monte Carlo simulation and viewing the price result. | ![Screenshot of Monte Carlo simulation tab](screenshots/monte_carlo.png) |
+| **3D Price Surface** | Interactive Plotly surface plot demonstrating Option Price sensitivity across changes in Stock Price and Volatility. | ![Screenshot of Plotly 3D surface plot visualizing option price sensitivity](screenshotssurface_plot.png) |
+| **Sensitivity Lines** | Interactive Plotly line chart showing how Delta and Gamma (Greeks) change as the underlying stock price moves. | ![Screenshot of Plotly line chart showing Delta and Gamma option greeks](screenshots/line_plot.png) |
 
 ---
 
@@ -36,17 +37,27 @@ Since the application is not live, these screenshots showcase the clean UI desig
 | **Core Calculations** | Python, NumPy, SciPy (`norm`) | High-speed, vectorized mathematical computation. |
 
 ---
-
 ## 📦 Getting Started (Local Run)
 
 1.  **Clone the Repository**
     ```bash
-    git clone [https://github.com/desrocheskyle/Fintech-Option-Pricer.git](https://github.com/desrocheskyle/Fintech-Option-Pricer.git)
-    cd Fintech-Option-Pricer
+    git clone https://github.com/desrocheskyle/Black-Scholes-Option-Pricer.git
     ```
 
 2.  **Set Up Virtual Environment & Install Dependencies**
-    *(Make sure you are not committing your `.venv` folder, but you must create one locally to run the app.)*
     ```bash
-    # Activate your virtual environment
-    source
+    # Create the virtual environment
+    python3 -m venv .venv
+
+    # Activate your virtual environment (for Linux/macOS)
+    source .venv/bin/activate 
+
+    # Install all required libraries
+    pip install -r requirements.txt
+    ```
+
+3.  **Run the App**
+    (Ensure your virtual environment is active, which is indicated by `(.venv)` in your terminal prompt)
+    ```bash
+    python -m streamlit run app.py
+    ```
